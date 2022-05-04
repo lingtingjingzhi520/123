@@ -109,14 +109,14 @@
 			.show_info .info_my .info_mem > div{text-align: left;}
 			.show_info .info_my .info_mem > div.nickname{max-width: 120px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 		</style>
-		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="animate.min.css">
 	</head>
 	<body>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/three.js"></script>
-		<script src="js/tween.min.js"></script>
-		<script src="js/TrackballControls.js"></script>
-		<script src="js/CSS3DRenderer.js"></script>
+		<script src="jquery.min.js"></script>
+		<script src="three.js"></script>
+		<script src="tween.min.js"></script>
+		<script src="TrackballControls.js"></script>
+		<script src="CSS3DRenderer.js"></script>
 
 		<div id="container"></div>
 		<audio autoplay="" loop=""><source src="http://www.ytmp3.cn/down/72794.mp3"></audio>
@@ -130,7 +130,7 @@
 
 		<div class="show_info animated" style="display:none;">
 			<div class="info_my">
-				<img src="img/0.jpg" />
+				<img src="0.jpg" />
 				<div class="info_mem">
 					<div class="nickname">佳佳</div>
 					<div class="id">ID:可爱</div>
@@ -162,7 +162,7 @@
 					$('.show_info').removeClass(_in[rand_in]);
 					// 更改展示的图片
 					var img = document.getElementsByClassName('element')[CurPersonNum].getElementsByTagName('img')[0];
-					img.setAttribute('src','img/1.jpg');
+					img.setAttribute('src','1.jpg');
 					++CurPersonNum;
 					setTimeout(function(){
 						$('.show_info').addClass(_out[rand_out]);
