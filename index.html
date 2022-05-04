@@ -119,7 +119,9 @@
 		<script src="CSS3DRenderer.js"></script>
 
 		<div id="container"></div>
-		<audio autoplay="" loop=""><source src="http://www.ytmp3.cn/down/72794.mp3"></audio>
+		<audio autoplay="autopaly" loop="loop" id="audios">
+  <source src="jiajia.mp3" type="audio/mp3" />
+</audio>
 		<div id="info">jiajia</div>
 		<div id="menu">
 			<button id="table">表格</button>
@@ -141,6 +143,26 @@
 			可以少些遗憾，而且，该在的人都在。</div>
 		</div>
 
+		
+		
+		<script>
+		// 这里使用了微信自带的WeixinJSBridgeReady事件
+document.addEventListener('WeixinJSBridgeReady', function() {
+    document.getElementById('audios').play()
+})
+   
+// 将以下代码添加到js入口函数内即可
+document.addEventListener('touchstart', function() {
+    document.getElementById('audios').play()
+})
+
+
+// 将以下代码添加到js入口函数内即可
+document.addEventListener('click', function() {
+    document.getElementById('audios').play()
+})
+		
+		</script>
 		<script>
 			var personArray = new Array;
     		var CurPersonNum = 0;
